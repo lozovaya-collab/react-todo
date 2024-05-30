@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { getTodos } from "../../api";
 import type { ITask } from "./types";
 import { Desk } from "../../components/Desk/Desk";
-import { EditTaskModal } from "./modals/edit/EditTaskModal";
+import { EditTaskModal } from "./modals/EditTaskModal";
 
 import './HomePage.scss';
     

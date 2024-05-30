@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 
-import type { IPropsEditTaskModal } from "../types";
-import type { ITask } from "../../types";
-import { Popup } from "../../../../components/Popup/Popup";
+import type { IPropsTaskModal } from "./types";
+import type { ITask } from "../types";
+import { Popup } from "../../../components/Popup/Popup";
 
-import './EditTaskModal.scss';
+import './TaskModal.scss';
 
-const EditTaskModal = (props: IPropsEditTaskModal) => 
+const EditTaskModal = (props: IPropsTaskModal) => 
 {
     const [currentTask, setCurrentTask] = useState<ITask>({
         id: 0,

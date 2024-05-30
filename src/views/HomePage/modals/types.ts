@@ -1,6 +1,6 @@
 import type { ITask } from "../types";
 
-interface IPropsEditTaskModal {
+interface IPropsTaskModal {
     isOpen: boolean;
     titleModal: string;
     task?: ITask;
@@ -8,4 +8,4 @@ interface IPropsEditTaskModal {
     close: () => void;
 }
 
-export type { IPropsEditTaskModal };
+export type { IPropsTaskModal };
