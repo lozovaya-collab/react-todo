@@ -1,0 +1,22 @@
+.desk {
+    width: 500px;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 15px;
+    border-radius: 10px;
+    border: 4px solid rgba(255, 255, 255, 0.298);
+    &_title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    &_content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

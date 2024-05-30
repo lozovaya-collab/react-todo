@@ -1,0 +1,13 @@
+.todo-page {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    &_headline {
+        text-align: center;
+    }
+    &_wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+}
