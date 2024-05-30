@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { getTodos } from "../../api";
 import type { ITask } from "./types";
 import { Desk } from "../../components/Desk/Desk";
-import { EditTaskModal } from "./modals/EditTaskModal";
+import { TaskModal } from "./modals/TaskModal";
 
 import './HomePage.scss';
     
@@ -71,10 +71,10 @@ const HomePage = () => {
                     <Desk tasks={completedTasks} delete={(value) => deleteTask(value.id, value.completed)} select={(value) => setSelectedTask(value)}>Completed</Desk>
                 </div>
                 {selectedTask && 
-                <EditTaskModal titleModal="Edit Task" task={selectedTask} isOpen={!!selectedTask} change={(value) => editTask(value)} close={() => setSelectedTask(null)} />}
+                <TaskModal titleModal="Edit Task" task={selectedTask} isOpen={!!selectedTask} change={(value) => editTask(value)} close={() => setSelectedTask(null)} />}
                 {
                 isOpenCreateModal &&
-                <EditTaskModal titleModal="Create Task" isOpen={isOpenCreateModal} change={(value) => createTask(value)} close={() => setIsOpenCreateModal(false)} />
+                <TaskModal titleModal="Create Task" isOpen={isOpenCreateModal} change={(value) => createTask(value)} close={() => setIsOpenCreateModal(false)} />
                 }
             </div>
         
