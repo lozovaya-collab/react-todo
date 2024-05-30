@@ -6,7 +6,7 @@ import { Popup } from "../../../components/Popup/Popup";
 
 import './TaskModal.scss';
 
-const EditTaskModal = (props: IPropsTaskModal) => 
+const TaskModal = (props: IPropsTaskModal) => 
 {
     const [currentTask, setCurrentTask] = useState<ITask>({
         id: 0,
@@ -66,4 +66,4 @@ const EditTaskModal = (props: IPropsTaskModal) =>
     )
 }
     
-export { EditTaskModal };
+export { TaskModal };
