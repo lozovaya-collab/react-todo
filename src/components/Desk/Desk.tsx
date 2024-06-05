@@ -1,5 +1,5 @@
 import type { IPropsDesk } from "./types.ts";
-import type { ITask } from "../../views/HomePage/types";
+import type { ITask } from "../../views/AppPage/types.ts";
 import './Desk.scss';
 
 import { Task } from "../Task/Task";

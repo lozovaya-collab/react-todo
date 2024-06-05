@@ -1,4 +1,4 @@
-import type { ITask } from "../../views/HomePage/types";
+import type { ITask } from "../../views/AppPage/types";
 
 interface IPropsDesk {
     tasks: ITask[];

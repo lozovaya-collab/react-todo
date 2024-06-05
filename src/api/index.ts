@@ -1,5 +1,5 @@
 import axios from 'axios';
-import type { ITask } from '../views/HomePage/types';
+import type { ITask } from '../views/AppPage/types';
 
 const API = axios.create();
 
