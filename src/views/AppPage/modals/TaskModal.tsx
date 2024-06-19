@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import type { IPropsTaskModal } from "./types";
+import type { IPropsTaskModal } from "./TaskModalTypes";
 import type { ITask } from "../types";
 import { Popup } from "../../../components/Popup/Popup";
 
@@ -60,7 +60,7 @@ const TaskModal = (props: IPropsTaskModal) =>
         <>
             {
                 props.isOpen &&
-                <Popup content={content} actions={actions}>{ props.titleModal }</Popup>
+                <Popup content={content()} actions={actions()}>{ props.titleModal }</Popup>
         }
         </>
     )

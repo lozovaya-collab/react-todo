@@ -1,13 +1,14 @@
-.todo-page {
+#root {
+    // max-width: 1280px;
+    // margin: 0 auto;
+    padding: 2rem;
+}
+
+.app {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
-    &_headline {
-        text-align: center;
-    }
-    &_wrapper {
-        display: flex;
-        justify-content: center;
-        gap: 50px;
-    }
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100vw;
+    gap: 20px;
 }
